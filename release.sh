@@ -7,7 +7,7 @@ increment_version() {
 }
 
 
-current_version=$(git describe --tags 2&>/dev/null || echo 'v0.0.0')
+current_version=$(git describe --tags --abbrev=0 2>/dev/null || echo 'v0.0.0')
 echo "Current Version is $current_version"
 
 release_version="$(increment_version "$current_version")"
