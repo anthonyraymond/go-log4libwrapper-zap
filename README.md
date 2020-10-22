@@ -1,0 +1,1 @@
+See https://github.com/anthonyraymond/go-log4lib
