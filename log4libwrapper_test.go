@@ -3,25 +3,10 @@ package log4libwrapper
 import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"io/ioutil"
 	"net/url"
-	"os"
 	"strings"
 	"testing"
 )
-
-func createTempDirOrFailTest(t *testing.T) (dir string, clean func()) {
-	var err error = nil
-	dir, err = ioutil.TempDir("", "")
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	clean = func() {
-		_ = os.RemoveAll(dir)
-	}
-	return
-}
 
 type StringBufferSink struct {
 	builder *strings.Builder
