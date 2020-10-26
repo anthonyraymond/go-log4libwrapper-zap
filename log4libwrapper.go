@@ -10,44 +10,44 @@ type zapLoggerWrapper struct {
 }
 
 func (w *zapLoggerWrapper) Info(args ...interface{}) {
-	w.delegate.Info(args)
+	w.delegate.Info(args...)
 }
 
 func (w *zapLoggerWrapper) Warn(args ...interface{}) {
-	w.delegate.Warn(args)
+	w.delegate.Warn(args...)
 }
 
 func (w *zapLoggerWrapper) Error(args ...interface{}) {
-	w.delegate.Error(args)
+	w.delegate.Error(args...)
 }
 
 func (w *zapLoggerWrapper) Panic(args ...interface{}) {
-	w.delegate.Panic(args)
+	w.delegate.Panic(args...)
 }
 
 func (w *zapLoggerWrapper) Fatal(args ...interface{}) {
-	w.delegate.Fatal(args)
+	w.delegate.Fatal(args...)
 }
 
 
 func (w *zapLoggerWrapper) Infof(template string, args ...interface{}) {
-	w.delegate.Infof(template, args)
+	w.delegate.Infof(template, args...)
 }
 
 func (w *zapLoggerWrapper) Warnf(template string, args ...interface{}) {
-	w.delegate.Warnf(template, args)
+	w.delegate.Warnf(template, args...)
 }
 
 func (w *zapLoggerWrapper) Errorf(template string, args ...interface{}) {
-	w.delegate.Errorf(template, args)
+	w.delegate.Errorf(template, args...)
 }
 
 func (w *zapLoggerWrapper) Panicf(template string, args ...interface{}) {
-	w.delegate.Panicf(template, args)
+	w.delegate.Panicf(template, args...)
 }
 
 func (w *zapLoggerWrapper) Fatalf(template string, args ...interface{}) {
-	w.delegate.Fatalf(template, args)
+	w.delegate.Fatalf(template, args...)
 }
 
 func WrapZapLogger(pointerToLogger *zap.SugaredLogger) log4lib.LibLogger {
