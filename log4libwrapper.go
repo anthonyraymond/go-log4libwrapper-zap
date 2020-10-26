@@ -9,6 +9,10 @@ type zapLoggerWrapper struct {
 	delegate *zap.SugaredLogger
 }
 
+func (w *zapLoggerWrapper) Debug(args ...interface{}) {
+	w.delegate.Debug(args...)
+}
+
 func (w *zapLoggerWrapper) Info(args ...interface{}) {
 	w.delegate.Info(args...)
 }
@@ -29,6 +33,9 @@ func (w *zapLoggerWrapper) Fatal(args ...interface{}) {
 	w.delegate.Fatal(args...)
 }
 
+func (w *zapLoggerWrapper) Debugf(template string, args ...interface{}) {
+	w.delegate.Debugf(template, args...)
+}
 
 func (w *zapLoggerWrapper) Infof(template string, args ...interface{}) {
 	w.delegate.Infof(template, args...)
@@ -50,6 +57,7 @@ func (w *zapLoggerWrapper) Fatalf(template string, args ...interface{}) {
 	w.delegate.Fatalf(template, args...)
 }
 
-func WrapZapLogger(pointerToLogger *zap.SugaredLogger) log4lib.LibLogger {
-	return &zapLoggerWrapper{delegate: pointerToLogger}
+func WrapZapLogger(pointerToLogger *zap.Logger) log4lib.LibLogger {
+	logger := pointerToLogger.WithOptions(zap.AddCallerSkip(1))
+	return &zapLoggerWrapper{delegate: logger.Sugar()}
 }

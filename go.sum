@@ -1,9 +1,7 @@
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
-github.com/anthonyraymond/go-log4lib v1.0.0 h1:yFOf8a27DjIyWszWAAW0Hkj4FTWiVlBSEq5IgyNz3K4=
-github.com/anthonyraymond/go-log4lib v1.0.0/go.mod h1:D2PHkG8dUD/WbzdGQP/u+Gu/SM7bgWs3+UCzvVGci0Y=
-github.com/anthonyraymond/go-log4lib v1.0.1 h1:ayhYz9qjEFj38YhrjtNBRdWftRaUYfPEM18JWxTtUwg=
-github.com/anthonyraymond/go-log4lib v1.0.1/go.mod h1:D2PHkG8dUD/WbzdGQP/u+Gu/SM7bgWs3+UCzvVGci0Y=
+github.com/anthonyraymond/go-log4lib v1.0.2 h1:YpQemSDWw+RnosBTJqDaP5Xiqq7cFjGRm7EDbTPN0cY=
+github.com/anthonyraymond/go-log4lib v1.0.2/go.mod h1:ZcAhHxB+ul4Xu6jZ1LdOH72zu5N6l3z/9oaBgoMwdCw=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
